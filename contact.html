@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pro Phone</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Small logo at the top right -->
+    <a href="home.html" class="logo-link">
+        <img src="images/logo (2).png" alt="Pro Phone Logo" class="small-logo">
+    </a>
+
+    <!-- Sidenav -->
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="aanbod.html">Ons Aanbod</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hamburger menu -->
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+
+    <div class="content">
+        <h1 class="white-text">Contacteer Ons</h1>
+       
+        <p class="white-text">Als u vragen heeft over herstellingen, verkoop of aankoop van een product neem dan contact met ons op via onze email of bel ons via ons telefoonnummer. <div class="text"> Jawadjawad46@gmail.com</div> <div class="text">+32 367 68 42 97</div>. </p>
+        
+        <!-- Google Maps -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.641049287245!2d4.420345315745073!3d51.22213997959414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6f8f8f8f8f8%3A0x8f8f8f8f8f8f8f8f!2sHandelstraat%2042%2C%202060%20Antwerpen!5e0!3m2!1sen!2sbe!4v1634567890123!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="images/kaartjes.png" alt="Repair Process" class="repair-img">
+
+    <!-- Footer -->
+    <footer class="footer-section" data-aos="fade-up">
+        <div class="footer-container">
+            <!-- Contact Form -->
+            <div class="footer-contact" data-aos="fade-up">
+                <h3>Contacteer Ons</h3>
+                <form action="mailto:Jawadjawad46@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Uw Naam" required>
+                    <input type="email" name="email" placeholder="Uw Email" required>
+                    <textarea name="message" placeholder="Uw Bericht" required></textarea>
+                    <button type="submit">Versturen</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-info" data-aos="fade-up">
+                <h3>Contactinformatie</h3>
+                <ul>
+                    <li><a href="mailto:Jawadjawad46@gmail.com">✉ Jawadjawad46@gmail.com</a></li>
+                    <li><a href="tel:+32367684297">📞 +32 367 68 42 97</a></li>
+                    <li><a href="https://www.google.com/maps/place/Handelstraat+42,+2060+Antwerpen" target="_blank">📍 Handelstraat 42, 2060 Antwerpen</a></li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-hours" data-aos="fade-up">
+                <h3>Openingsuren</h3>
+                <p>Maandag: 11:00 - 20:00</p>
+                <p>Dinsdag: 11:00 - 20:00</p>
+                <p>Woensdag: Gesloten</p>
+                <p>Donderdag: 11:00 - 20:00</p>
+                <p>Vrijdag: 11:00 - 20:00</p>
+                <p>Zaterdag: 11:00 - 20:00</p>
+                <p>Zondag: 12:00 - 20:00</p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pro Phone</p>
+            <a href="home.html" class="logo-link">
+                <img src="images/logo.png" alt="Pro Phone Logo" class="small-logo">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

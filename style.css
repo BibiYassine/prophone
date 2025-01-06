@@ -1,0 +1,282 @@
+/* Ensure footer stays at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #151414;
+}
+
+
+.small-logo {
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+}
+
+
+/* Sidenav styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000; /* Black background */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffd700; /* Gold color */
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffecb3; /* Lighter gold */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffd700; /* Gold color */
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+footer {
+    margin-top: auto;
+
+}
+/* Footer */
+.footer {
+    
+    background-color: #000; /* Changed to black */
+    padding: 5px 0; /* Reduced padding */
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffd700; /* Changed to gold */
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #000; /* Changed to black */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact h3,
+.footer-info h3,
+.footer-hours h3 {
+    font-size: 1.5rem;
+    color: #ffd700; /* Changed to gold */
+    margin-bottom: 20px;
+}
+
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333; /* Darker black */
+    color: #fff;
+}
+
+.footer-contact input::placeholder,
+.footer-contact textarea::placeholder {
+    color: #ffd700; /* Changed to gold */
+}
+
+.footer-contact button {
+    padding: 10px 20px;
+    background-color: #ffd700; /* Changed to gold */
+    color: #000; /* Changed to black */
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-contact button:hover {
+    background-color: #ffecb3; /* Lighter gold */
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+.footer-info ul li a {
+    color: #ffd700; /* Changed to gold */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info ul li a:hover {
+    color: #ffecb3; /* Lighter gold */
+    text-decoration: underline;
+}
+
+.footer-hours p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ffd700; /* Changed to gold */
+    font-size: 0.9rem;
+    color: #ffecb3; /* Lighter gold */
+}
+
+.footer-social ul li a:hover {
+    color: #ffecb3; /* Lighter gold */
+}
+
+/* Small logo styles */
+.logo-link {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* White text */
+.white-text {
+    color: #fff;
+    margin-top: 40px; /* Add space from the top */
+    padding: 15px;
+}
+h1{
+    
+    font-size: 40px;
+    margin-top: 40px; /* Add space from the top */
+    padding: 15px;
+}
+ p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px; /* Add space from the top */
+    padding: 15px;
+}
+
+/* Repair image adjustments */
+.repair-img {
+    max-width: 80%;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #ffd700; /* Gold border */
+    padding: 10px;
+}
+
+/* Center content */
+.content {
+    text-align: center;
+    flex: 1;
+}
+
+a {
+    color: #ffd700; /* Gold color */
+    text-decoration: none;
+    background-color: black;
+    border-radius: 50px; /* Make the border radius larger */
+    padding: 10px 20px; /* Add padding to the text */
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+    color: #ffecb3; /* Lighter gold */
+    background-color: #333; /* Darker background on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .content {
+        padding-top: 50px;
+    }
+    .lightbox {
+        display: none;
+    }
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.lightbox-content img {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+lightbox-close:hover,
+.lightbox-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
