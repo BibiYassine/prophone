@@ -199,7 +199,7 @@ h1{
 
 /* Repair image adjustments */
 .repair-img {
-    max-width: 80%;
+    max-width: 40%;
     margin: 20px auto;
     display: block;
     border: 2px solid #ffd700; /* Gold border */
@@ -234,6 +234,13 @@ a:hover {
     }
     .lightbox {
         display: none;
+    }
+    .repair-img {
+        max-width: 80%;
+        margin: 20px auto;
+        display: block;
+        border: 2px solid #ffd700; /* Gold border */
+        padding: 10px;
     }
 }
 
